@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500;1,700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Portfolio Website</title>
+</head>
+
+<body>
+  <!--- Navigation Section --->
+  <section class="navigation">
+    <nav class="navbar navbar-expand-sm container">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="img/img-01.jpg" alt="Logo" style="width:40px;" class="rounded-pill">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2 nav__input" type="text" placeholder="Search">
+            <button class="btn btn-primary nav__button" type="button">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!--- Navigation Section --->
+
+
+
+  <!--- Hero Section --->
+  <section class="hero__section">
+    <div class="container">
+      <div class="hero__text">
+        <h1>Hi I'M Toufiq Gilani</h1>
+        <p>
+          I'M A Web Developer, As a professional,
+          my priority is to provide my clients with a satisfactory
+          experience by delivering quality and value. My focus is on understanding
+          their needs and requirements, and taking the necessary steps to ensure
+          that their goals are met effectively and efficiently.
+        </p>
+        <button type="button" class="btn btn-lg hero__button">Explore More</button>
+      </div>
+    </div>
+  </section>
+  <!--- Hero Section --->
+
+
+
+  <!--- Sub Section --->
+  <section class="about__section" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 about__text">
+          <h2>About Me</h2>
+          <p>
+            As a Web Developer, I'M responsible for creating and maintaining websites
+            and web applications with varying degrees of complexity.
+            My role involves translating web designs and wireframes into functional
+            and responsive websites, developing interactive features, and optimizing
+            web pages for speed, accessibility, and search engine optimization (SEO).
+            My skills in coding languages such as HTML, CSS, JavaScript, and PHP,
+            and use various tools and frameworks to streamline your development work.
+          </p>
+          <button class="about__button">Read More</button>
+        </div>
+        <div class="col-md-6">
+          <img src="img/img-01.jpg" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--- Sub Section --->
+
+
+
+  <!--- Services Section --->
+  <section class="services__section" id="services">
+    <div class="container">
+      <h2 class="services-section-title">Services</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <div class="col-md">
+          <div class="card h-100">
+            <div class="card-header">
+              <h3>Developer</h3>
+            </div>
+            <div class="card-body">
+              <p>
+                Creating websites for online use.
+                Making pages on the internet.
+                Software construction for the web.
+                The process of constructing online applications and interfaces.
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="services__button">Read More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md">
+          <div class="card h-100">
+            <div class="card-header">
+              <h3>Designer</h3>
+            </div>
+            <div class="card-body">
+              <p>
+                Web design is the process of designing websites.
+                This includes a range of elements such as visual design,
+                typography, user interface design, and search engine optimization (SEO).
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="services__button">Read More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md">
+          <div class="card h-100">
+            <div class="card-header">
+              <h3>Writer</h3>
+            </div>
+            <div class="card-body">
+              <p>
+                A content writer is a professional who creates written material for
+                websites, blogs, social media, and other digital platforms.
+                Content writers produce a instructional guides, email newsletters.
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="services__button">Read More</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--- Services Section --->
+
+
+
+  <!--- Skills Section --->
+  <section class="skill__section" id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+
+      <div>
+        <h3 class="skill__container">
+          <span class="skill">HTML</span>
+          <span class="val">90%</span>
+        </h3>
+        <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" style="width: 90%"></div>
+        </div>
+      </div><br>
+
+      <div>
+        <h3 class="skill__container">
+          <span class="skill">CSS</span>
+          <span class="val">70%</span>
+        </h3>
+        <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" style="width: 70%"></div>
+        </div>
+      </div><br>
+
+      <div>
+        <h3 class="skill__container">
+          <span class="skill">JavaScript</span>
+          <span class="val">30%</span>
+        </h3>
+        <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" style="width: 30%"></div>
+        </div>
+      </div><br>
+
+      <div>
+        <h3 class="skill__container">
+          <span class="skill">BootStrap</span>
+          <span class="val">60%</span>
+        </h3>
+        <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" style="width: 60%"></div>
+        </div>
+      </div><br>
+
+      <div>
+        <h3 class="skill__container">
+          <span class="skill">Github</span>
+          <span class="val">80%</span>
+        </h3>
+        <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" style="width: 80%"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--- Skills Section --->
+
+
+
+  <!--- Contact Section --->
+  <section class="contact__section" id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form>
+
+        <div class="form__group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control form__control" id="name" />
+        </div><br>
+
+        <div class="form__group">
+          <label for="email">Email Address</label>
+          <input type="email" class="form-control form__control" id="email" />
+        </div><br>
+
+        <div class="form__group">
+          <label for="message">Message</label>
+          <textarea class="form-control form__control" id="message" rows="3"></textarea>
+        </div><br>
+
+        <button type="submit" class="btn btn-primary contact__button">
+          <span>Submit</span>
+        </button>
+
+      </form>
+    </div>
+  </section>
+  <!--- Contact Section --->
+
+
+
+  <!--- Footer --->
+  <footer>
+    <div class="container">
+      <p class="footer-text">
+        Copyright &copy; 2023 Toufiq Gilani. All rights reserved.
+      </p>
+    </div>
+  </footer>
+  <!--- Footer --->
+</body>
+
+</html>
