@@ -5,25 +5,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500;1,700&display=swap" rel="stylesheet">
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
+  <link rel="shortcut icon" href="img/favicon.svg" type="image/svg">
   <link rel="stylesheet" href="style.css">
-
-  <title>Portfolio Website</title>
+  <title>Blog Website</title>
 </head>
 
 <body>
-  <!--- Navigation Section --->
-  <section class="navigation">
-    <nav class="navbar navbar-expand-sm container">
-      <div class="container-fluid">
+  <header class="h-100">
+    <nav class="navbar navbar-expand-sm py-3 container-fluid">
+      <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="img/img-01.jpg" alt="Logo" style="width:40px;" class="rounded-pill">
+          <img src="img/img-profile.png" alt="..." style="width:40px;" class="rounded-pill">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
           <span class="navbar-toggler-icon"></span>
@@ -34,244 +28,508 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link" href="#adventure">Adventure</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link" href="#blog">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#team">Team</a>
             </li>
           </ul>
           <form class="d-flex">
-            <input class="form-control me-2 nav__input" type="text" placeholder="Search">
-            <button class="btn btn-primary nav__button" type="button">Search</button>
+            <a href="#details" class="btn btn-warning me-2">Explore</a>
+            <a href="#contact" class="btn btn-info">Contact</a>
           </form>
         </div>
       </div>
     </nav>
-  </section>
-  <!--- Navigation Section --->
-
-
-
-  <!--- Hero Section --->
-  <section class="hero__section">
-    <div class="container">
-      <div class="hero__text">
-        <h1>Hi I'M Toufiq Gilani</h1>
-        <p>
-          I'M A Web Developer, As a professional,
-          my priority is to provide my clients with a satisfactory
-          experience by delivering quality and value. My focus is on understanding
-          their needs and requirements, and taking the necessary steps to ensure
-          that their goals are met effectively and efficiently.
-        </p>
-        <button type="button" class="btn btn-lg hero__button">Explore More</button>
+    <section>
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner"> <!-- The slideshow/carousel -->
+          <div class="carousel-item active carousel-bg-1">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-md-8 carousel-bottom-gap">
+                <h1 class="carousel-title fw-bold mb-4 display-4">Developing</h1>
+                <p class="fw-light mb-4 display-6">
+                  Passionate web developer skilled in front-end and
+                  back-end technologies, creating seamless,
+                  user-friendly digital experiences.
+                </p>
+                <button class="btn btn-info fs-5 text-dark">Explore . . .</button>
+              </div>
+              <div class="col-md-4">
+                <img src="img/carousel-1.png" class="img-fluid d-block mw-100 img-cen" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-bg-2">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-md-8 carousel-bottom-gap">
+                <h2 class="carousel-title fw-bold mb-4 display-4">Designing</h2>
+                <p class="fw-light mb-4 display-6">
+                  Creative web designer crafting visually appealing,
+                  intuitive interfaces for optimal user
+                  experiences and brand impact.
+                </p>
+                <button class="btn btn-info fs-5 text-dark">Explore . . .</button>
+              </div>
+              <div class="col-md-4">
+                <img src="img/carousel-2.png" class="img-fluid d-block mw-100 img-cen" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-bg-3">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-md-8 carousel-bottom-gap">
+                <h2 class="carousel-title fw-bold mb-4 display-4">Traveling</h2>
+                <p class="fw-light mb-4 display-6">
+                  Passionate traveler with a zest for exploring
+                  new places, cultures, and creating
+                  unforgettable memories.
+                </p>
+                <button class="btn btn-info fs-5 text-dark">Explore . . .</button>
+              </div>
+              <div class="col-md-4">
+                <img src="img/carousel-3.png" class="img-fluid d-block mw-100 img-cen" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-  <!--- Hero Section --->
+    </section>
+  </header>
 
-
-
-  <!--- Sub Section --->
-  <section class="about__section" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 about__text">
-          <h2>About Me</h2>
-          <p>
-            As a Web Developer, I'M responsible for creating and maintaining websites
-            and web applications with varying degrees of complexity.
-            My role involves translating web designs and wireframes into functional
-            and responsive websites, developing interactive features, and optimizing
-            web pages for speed, accessibility, and search engine optimization (SEO).
-            My skills in coding languages such as HTML, CSS, JavaScript, and PHP,
-            and use various tools and frameworks to streamline your development work.
+  <main>
+    <section class="py-5 container" id="about">
+      <div class="row align-items-center g-1">
+        <div class="col-md-5 about-bottom-gap">
+          <img src="img/img-profile.png" class="img-fluid d-block w-75 rounded-circle" alt="...">
+        </div>
+        <div class="col-md-7">
+          <h2 class="clr-h2">About Me</h2>
+          <p class="h5 fw-light">
+            Passionate web developer and designer with a wanderlust heart.
+            Combining creativity and code to craft compelling
+            online experiences. Embracing new cultures
+            fuels my inspiration for innovative
+            design solutions.
           </p>
-          <button class="about__button">Read More</button>
+          <button class="btn new-button">Read More</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5" id="adventure">
+      <h2 class="text-center mi-line">Adventures</h2>
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div class="card h-100 overflow-hidden bg-dark rounded-4 shadow-lg adventure-bg">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-light">
+              <h3 class="pt-4 mt-4 mb-4 display-6 lh-1 fw-bold">
+                Dynamic culture, history, architecture in Grozny, Chechnya's capital.
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="img/img-profile.png" width="32" height="32" class="rounded-circle border border-white"
+                    alt="...">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20">
+                    <path fill="currentColor"
+                      d="M10 20S3 10.87 3 7a7 7 0 1 1 14 0c0 3.87-7 13-7 13zm0-11a2 2 0 1 0 0-4a2 2 0 0 0 0 4z" />
+                  </svg>
+                  <small class="badge bg-info rounded-pill">Grozny</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20">
+                    <path fill="currentColor"
+                      d="M1 4c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm2 2v12h14V6H3zm2-6h2v2H5V0zm8 0h2v2h-2V0zM5 9h2v2H5V9zm0 4h2v2H5v-2zm4-4h2v2H9V9zm0 4h2v2H9v-2zm4-4h2v2h-2V9zm0 4h2v2h-2v-2z" />
+                  </svg>
+                  <small class="badge bg-info rounded-pill">30d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 overflow-hidden bg-dark rounded-4 shadow-lg adventure-bg">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-light">
+              <h3 class="pt-4 mt-4 mb-4 display-6 lh-1 fw-bold">
+                Cherry blossoms, serene landscapes, modern marvels await in Japan.
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="img/img-profile.png" width="32" height="32" class="rounded-circle border border-white"
+                    alt="...">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20">
+                    <path fill="currentColor"
+                      d="M10 20S3 10.87 3 7a7 7 0 1 1 14 0c0 3.87-7 13-7 13zm0-11a2 2 0 1 0 0-4a2 2 0 0 0 0 4z" />
+                  </svg>
+                  <small class="badge bg-info rounded-pill">Japan</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20">
+                    <path fill="currentColor"
+                      d="M1 4c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm2 2v12h14V6H3zm2-6h2v2H5V0zm8 0h2v2h-2V0zM5 9h2v2H5V9zm0 4h2v2H5v-2zm4-4h2v2H9V9zm0 4h2v2H9v-2zm4-4h2v2h-2V9zm0 4h2v2h-2v-2z" />
+                  </svg>
+                  <small class="badge bg-info rounded-pill">20d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 overflow-hidden bg-dark rounded-4 shadow-lg adventure-bg">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-light">
+              <h3 class="pt-4 mt-4 mb-4 display-6 lh-1 fw-bold">
+                Ancient history, diverse culture, stunning landscapes in Iran.
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="img/img-profile.png" width="32" height="32" class="rounded-circle border border-white"
+                    alt="...">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20">
+                    <path fill="currentColor"
+                      d="M10 20S3 10.87 3 7a7 7 0 1 1 14 0c0 3.87-7 13-7 13zm0-11a2 2 0 1 0 0-4a2 2 0 0 0 0 4z" />
+                  </svg>
+                  <small class="badge bg-info rounded-pill">Iran</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20">
+                    <path fill="currentColor"
+                      d="M1 4c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm2 2v12h14V6H3zm2-6h2v2H5V0zm8 0h2v2h-2V0zM5 9h2v2H5V9zm0 4h2v2H5v-2zm4-4h2v2H9V9zm0 4h2v2H9v-2zm4-4h2v2h-2V9zm0 4h2v2h-2v-2z" />
+                  </svg>
+                  <small class="badge bg-info rounded-pill">10d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5" id="blog">
+      <h2 class="text-center mi-line">Blog Articles</h2>
+      <div class="row py-5">
+        <div class="col-lg-3 col-md-6">
+          <div class="card w-100 bottom-gap">
+            <img class="card-img-top" src="img/blog-1.jpg" alt="...">
+            <div class="card-body">
+              <h4 class="card-title text-secondary h5 fw-bold">Travel</h4>
+              <p class="card-text h4 text-primary">
+                Lorem ipsum dolor sit ame cons dolor elite Provident labor!
+              </p>
+              <div class="d-flex">
+                <button type="button" class="btn btn-warning text-dark">
+                  See More <span class="badge bg-danger">3</span>
+                </button>
+              </div>
+              <div class="d-flex align-items-center mt-4">
+                <img src="img/team-4.png" class="img-fluid rounded-pill me-3" width="50" alt="...">
+                <div>
+                  <h3 class="mb-0 fs-5">Kara Hakim</h3>
+                  <p class="mb-0 text-secondary">Oct 15, 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card w-100 bottom-gap">
+            <img class="card-img-top" src="img/blog-2.jpg" alt="...">
+            <div class="card-body">
+              <h4 class="card-title text-secondary h5 fw-bold">Programming</h4>
+              <p class="card-text h4 text-success">
+                Lorem ipsum dolor sit ame cons dolor elite Provident labor!
+              </p>
+              <div class="d-flex">
+                <button type="button" class="btn btn-info text-dark">
+                  See More <span class="badge bg-danger">5</span>
+                </button>
+              </div>
+              <div class="d-flex align-items-center mt-4">
+                <img src="img/team-3.jpg" class="img-fluid rounded-pill me-3" width="50" alt="...">
+                <div>
+                  <h3 class="mb-0 fs-5">Murat Hakim</h3>
+                  <p class="mb-0 text-secondary">Aug 10, 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card w-100 mid-bottom-gap">
+            <img class="card-img-top" src="img/blog-3.jpg" alt="...">
+            <div class="card-body">
+              <h4 class="card-title text-secondary h5 fw-bold">Design</h4>
+              <p class="card-text h4 text-danger">
+                Lorem ipsum dolor sit ame cons dolor elite Provident labor!
+              </p>
+              <div class="d-flex">
+                <button type="button" class="btn btn-warning text-dark">
+                  See More <span class="badge bg-danger">4</span>
+                </button>
+              </div>
+              <div class="d-flex align-items-center mt-4">
+                <img src="img/team-2.jpg" class="img-fluid rounded-pill me-3" width="50" alt="...">
+                <div>
+                  <h3 class="mb-0 fs-5">Osman Kara</h3>
+                  <p class="mb-0 text-secondary">Mar 15, 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card w-100">
+            <img class="card-img-top" src="img/blog-4.jpg" alt="...">
+            <div class="card-body">
+              <h4 class="card-title text-secondary h5 fw-bold">Development</h4>
+              <p class="card-text h4 text-dark">
+                Lorem ipsum dolor sit ame cons dolor elite Provident labor!
+              </p>
+              <div class="d-flex">
+                <button type="button" class="btn btn-info text-dark">
+                  See More <span class="badge bg-danger">7</span>
+                </button>
+              </div>
+              <div class="d-flex align-items-center mt-4">
+                <img src="img/team-1.jpg" class="img-fluid rounded-pill me-3" width="50" alt="...">
+                <div>
+                  <h3 class="mb-0 fs-5">David Miller</h3>
+                  <p class="mb-0 text-secondary">Feb 25, 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5" id="team">
+      <h2 class="text-center mi-line">My Team</h2>
+      <div class="row py-5">
+        <div class="col-md-4 mid-bottom-gap">
+          <div class="card img-fluid" style="width:500px">
+            <img class="card-img-top" src="img/team-3.jpg" alt="Card image" style="width:100%">
+            <div class="card-img-overlay">
+              <h4 class="card-title text-light badge bg-info rounded-pill fs-6">
+                Murat Hakim
+              </h4><br>
+              <p class="badge bg-info rounded-pill">Programmer</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mid-bottom-gap">
+          <div class="card img-fluid" style="width:500px">
+            <img class="card-img-top" src="img/team-2.jpg" alt="Card image" style="width:100%">
+            <div class="card-img-overlay">
+              <h4 class="card-title text-light badge bg-info rounded-pill fs-6">
+                Osman Kara
+              </h4><br>
+              <p class="badge bg-info rounded-pill">Designer</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card img-fluid" style="width:500px">
+            <img class="card-img-top" src="img/team-1.jpg" alt="Card image" style="width:100%">
+            <div class="card-img-overlay">
+              <h4 class="card-title text-light badge bg-info rounded-pill fs-6">
+                David Miller
+              </h4><br>
+              <p class="badge bg-info rounded-pill">Developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5" id="details">
+      <h2 class="text-center mi-line">Our Details</h2>
+      <div class="row py-5">
+        <div class="col-md-6">
+          <div>
+            <h3 class="fs-5">
+              <span class="text-success">Clients</span>
+              <span class="text-primary float-end">75%</span>
+            </h3>
+            <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="75"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" style="width: 75%"></div>
+            </div>
+          </div><br>
+          <div>
+            <h3 class="fs-5">
+              <span class="text-success">Projects</span>
+              <span class="text-primary float-end">80%</span>
+            </h3>
+            <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="80"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" style="width: 80%"></div>
+            </div>
+          </div><br>
+          <div>
+            <h3 class="fs-5">
+              <span class="text-success">Workers</span>
+              <span class="text-primary float-end">90%</span>
+            </h3>
+            <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="90"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" style="width: 90%"></div>
+            </div>
+          </div><br>
+          <div>
+            <h3 class="fs-5">
+              <span class="text-success">Students</span>
+              <span class="text-primary float-end">85%</span>
+            </h3>
+            <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="85"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" style="width: 85%"></div>
+            </div>
+          </div><br>
         </div>
         <div class="col-md-6">
-          <img src="img/img-01.jpg" class="img-fluid">
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--- Sub Section --->
-
-
-
-  <!--- Services Section --->
-  <section class="services__section" id="services">
-    <div class="container">
-      <h2 class="services-section-title">Services</h2>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-
-        <div class="col-md">
-          <div class="card h-100">
-            <div class="card-header">
-              <h3>Developer</h3>
+          <div>
+            <h3 class="fs-5">
+              <span class="text-success">Frontend</span>
+              <span class="text-primary float-end">65%</span>
+            </h3>
+            <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="65"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" style="width: 65%"></div>
             </div>
-            <div class="card-body">
-              <p>
-                Creating websites for online use.
-                Making pages on the internet.
-                Software construction for the web.
-                The process of constructing online applications and interfaces.
-              </p>
+          </div><br>
+          <div>
+            <h3 class="fs-5">
+              <span class="text-success">Backend</span>
+              <span class="text-primary float-end">50%</span>
+            </h3>
+            <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="50"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" style="width: 50%"></div>
             </div>
-            <div class="card-footer">
-              <button class="services__button">Read More</button>
+          </div><br>
+          <div>
+            <h3 class="fs-5">
+              <span class="text-success">Fullstack</span>
+              <span class="text-primary float-end">60%</span>
+            </h3>
+            <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="60"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" style="width: 60%"></div>
             </div>
-          </div>
-        </div>
-
-        <div class="col-md">
-          <div class="card h-100">
-            <div class="card-header">
-              <h3>Designer</h3>
-            </div>
-            <div class="card-body">
-              <p>
-                Web design is the process of designing websites.
-                This includes a range of elements such as visual design,
-                typography, user interface design, and search engine optimization (SEO).
-              </p>
-            </div>
-            <div class="card-footer">
-              <button class="services__button">Read More</button>
+          </div><br>
+          <div>
+            <h3 class="fs-5">
+              <span class="text-success">PHP</span>
+              <span class="text-primary float-end">55%</span>
+            </h3>
+            <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="55"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" style="width: 55%"></div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="col-md">
-          <div class="card h-100">
-            <div class="card-header">
-              <h3>Writer</h3>
-            </div>
-            <div class="card-body">
-              <p>
-                A content writer is a professional who creates written material for
-                websites, blogs, social media, and other digital platforms.
-                Content writers produce a instructional guides, email newsletters.
-              </p>
-            </div>
-            <div class="card-footer">
-              <button class="services__button">Read More</button>
-            </div>
+    <section class="container py-5" id="contact">
+      <h2 class="text-center mi-line">Contact</h2>
+      <div class="row py-5">
+        <div class="col-lg-6 bottom-gap">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="p-3 bg-success text-light rounded-2">
+                <svg class="mb-3" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16">
+                  <g fill="currentColor">
+                    <path
+                      d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                    <path d="M8 8a2 2 0 1 1 0-4a2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6a3 3 0 0 0 0 6z" />
+                  </g>
+                </svg>
+                <h3>Address</h3>
+                <p class="mb-0">G14 Old Town</p>
+                <p>East, New Town</p>
+              </div>
+            </div> <!-- End Info Item -->
+            <div class="col-md-6">
+              <div class="p-3 bg-success text-light rounded-2">
+                <svg class="mb-3" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16">
+                  <path fill="currentColor"
+                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608a17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42a18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                </svg>
+                <h3>Call Us</h3>
+                <p class="mb-0">+880 1234 4567 89</p>
+                <p>+880 9877 6543 21</p>
+              </div>
+            </div> <!-- End Info Item -->
+            <div class="col-md-6">
+              <div class="p-3 bg-success text-light rounded-2">
+                <svg class="mb-3" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16">
+                  <path fill="currentColor"
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2l7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383l-4.708 2.825L15 11.105V5.383Zm-.034 6.876l-5.64-3.471L8 9.583l-1.326-.795l-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                </svg>
+                <h3>Email Us</h3>
+                <p class="mb-0">info@example.com</p>
+                <p>contact@example.com</p>
+              </div>
+            </div> <!-- End Info Item -->
+            <div class="col-md-6">
+              <div class="p-3 bg-success text-light rounded-2">
+                <svg class="mb-3" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16">
+                  <g fill="currentColor">
+                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                  </g>
+                </svg>
+                <h3>Open Hours</h3>
+                <p class="mb-0">Sunday - Thursday</p>
+                <p>10:00AM - 05:00PM</p>
+              </div>
+            </div> <!-- End Info Item -->
           </div>
         </div>
-
+        <div class="col-lg-6" id="bg-transparent">
+          <form action="#" class="p-4 form-bg">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" name="name" class="mb-2 form-control" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6">
+                <input type="email" name="email" class="mb-2 form-control" placeholder="Your Email" required>
+              </div>
+              <div class="col-md-12">
+                <input type="text" name="subject" class="mb-2 form-control" placeholder="Subject" required>
+              </div>
+              <div class="col-md-12">
+                <textarea class="mb-2 form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="col-md-12 text-center">
+                <button type="submit" class="btn btn-light">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div> <!-- End Contact Form -->
       </div>
-    </div>
-  </section>
-  <!--- Services Section --->
+    </section>
+  </main>
 
-
-
-  <!--- Skills Section --->
-  <section class="skill__section" id="skills">
-    <div class="container">
-      <h2>Skills</h2>
-
-      <div>
-        <h3 class="skill__container">
-          <span class="skill">HTML</span>
-          <span class="val">90%</span>
-        </h3>
-        <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" style="width: 90%"></div>
-        </div>
-      </div><br>
-
-      <div>
-        <h3 class="skill__container">
-          <span class="skill">CSS</span>
-          <span class="val">70%</span>
-        </h3>
-        <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" style="width: 70%"></div>
-        </div>
-      </div><br>
-
-      <div>
-        <h3 class="skill__container">
-          <span class="skill">JavaScript</span>
-          <span class="val">30%</span>
-        </h3>
-        <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" style="width: 30%"></div>
-        </div>
-      </div><br>
-
-      <div>
-        <h3 class="skill__container">
-          <span class="skill">BootStrap</span>
-          <span class="val">60%</span>
-        </h3>
-        <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" style="width: 60%"></div>
-        </div>
-      </div><br>
-
-      <div>
-        <h3 class="skill__container">
-          <span class="skill">Github</span>
-          <span class="val">80%</span>
-        </h3>
-        <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" style="width: 80%"></div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <!--- Skills Section --->
-
-
-
-  <!--- Contact Section --->
-  <section class="contact__section" id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form>
-
-        <div class="form__group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control form__control" id="name" />
-        </div><br>
-
-        <div class="form__group">
-          <label for="email">Email Address</label>
-          <input type="email" class="form-control form__control" id="email" />
-        </div><br>
-
-        <div class="form__group">
-          <label for="message">Message</label>
-          <textarea class="form-control form__control" id="message" rows="3"></textarea>
-        </div><br>
-
-        <button type="submit" class="btn btn-primary contact__button">
-          <span>Submit</span>
-        </button>
-
-      </form>
-    </div>
-  </section>
-  <!--- Contact Section --->
-
-
-
-  <!--- Footer --->
   <footer>
-    <div class="container">
-      <p class="footer-text">
-        Copyright &copy; 2023 Toufiq Gilani. All rights reserved.
+    <div class="container text-center">
+      <p class="fs-5">
+        Copyright &copy; 2023
+        <span class="text-primary">GilaniRabbu</span>.
+        All rights reserved.
       </p>
     </div>
   </footer>
-  <!--- Footer --->
 </body>
 
 </html>
